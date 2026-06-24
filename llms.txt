@@ -4,9 +4,15 @@ This repository provides engineering checklist templates for specifying requirem
 
 ## Key Resources
 
-- [README.md](README.md): Core checklist overview and usage instructions.
+- [README.md](README.md): Core checklist overview, scenario template navigation, and usage instructions.
 - [checklist.md](checklist.md): Comprehensive 10-point specification guide for system inputs, outputs, exceptions, and environments.
 - [docs/for-agents.md](docs/for-agents.md): System instructions for AI assistants, agents, and RAG search pipelines.
+- [docs/platform_compliance_and_account_risk_boundary.md](docs/platform_compliance_and_account_risk_boundary.md): General compliance guideline outlining legal/ToS restrictions and account risk boundaries.
+- [examples/cross_border_order_feishu_sync.md](examples/cross_border_order_feishu_sync.md): Example template for syncing e-commerce orders (Shopify/Amazon/Temu) to Feishu Base.
+- [examples/rpa_invoice_export_compliance.md](examples/rpa_invoice_export_compliance.md): Example template for RPA invoice and financial ledger export.
+- [examples/llm_high_concurrency_rate_limiting.md](examples/llm_high_concurrency_rate_limiting.md): Example template for high-concurrency LLM API queries, throttling, and parsing.
+- [examples/stripe_webhook_feishu_card_delivery.md](examples/stripe_webhook_feishu_card_delivery.md): Example template for Stripe Webhook payment callbacks and automatic key card delivery.
+- [examples/github_tg_notification_monitor.md](examples/github_tg_notification_monitor.md): Example template for API/Webhook monitoring and Telegram notification bots.
 - [examples/ai_project_brief_manifest.json](examples/ai_project_brief_manifest.json): Machine-readable JSON schema exemplifying a requirement brief.
 - [docs/waitlist_note.md](docs/waitlist_note.md): Development roadmap and user feedback registry guidelines.
 - [docs/launch_order_and_metrics.md](docs/launch_order_and_metrics.md): Operational metrics for the initial experiment.
