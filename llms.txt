@@ -1,0 +1,12 @@
+# AI Project Requirement Checklist
+
+This repository provides engineering checklist templates for specifying requirements in mid-sized AI integration, workflow automation, and data synchronization projects. It is designed to assist non-technical clients in detailing input/output boundaries, error fallback mechanisms, and API limits before outsourcing to developers.
+
+## Key Resources
+
+- [README.md](README.md): Core checklist overview and usage instructions.
+- [checklist.md](checklist.md): Comprehensive 10-point specification guide for system inputs, outputs, exceptions, and environments.
+- [docs/for-agents.md](docs/for-agents.md): System instructions for AI assistants, agents, and RAG search pipelines.
+- [examples/ai_project_brief_manifest.json](examples/ai_project_brief_manifest.json): Machine-readable JSON schema exemplifying a requirement brief.
+- [docs/waitlist_note.md](docs/waitlist_note.md): Development roadmap and user feedback registry guidelines.
+- [docs/launch_order_and_metrics.md](docs/launch_order_and_metrics.md): Operational metrics for the initial experiment.

@@ -1,0 +1,73 @@
+{
+  "project_goal": "Automatically sync new customer leads to Feishu Multi-dimensional tables and send onboarding emails via AI.",
+  "target_user": "Small business owner running an e-commerce storefront without a dedicated developer team.",
+  "input_data": {
+    "format": "JSON payload sent via Webhook callback",
+    "frequency": "Approximately 10 to 50 times per day",
+    "fields": [
+      {
+        "name": "customer_id",
+        "type": "string",
+        "description": "Unique identifier for the customer"
+      },
+      {
+        "name": "email",
+        "type": "string",
+        "description": "User email address"
+      },
+      {
+        "name": "amount",
+        "type": "number",
+        "description": "Payment amount"
+      }
+    ]
+  },
+  "expected_output": {
+    "actions": [
+      "Add a row in Feishu Multi-dimensional Table containing customer details.",
+      "Send a greeting email via SMTP containing an AI-generated activation code."
+    ],
+    "latency_sla_ms": 3000
+  },
+  "integrations": [
+    {
+      "provider": "OpenAI",
+      "purpose": "Generate unique activation keys based on purchase details",
+      "rate_limit_rpm": 3
+    },
+    {
+      "provider": "Feishu / Lark",
+      "purpose": "Append records to Multi-dimensional Table API",
+      "rate_limit_qps": 5
+    }
+  ],
+  "deployment_environment": {
+    "hosting": "Vercel serverless environment",
+    "database": "Supabase serverless PostgreSQL",
+    "ssl_required": true
+  },
+  "acceptance_tests": {
+    "metrics": "Successful execution rate must be >= 99% for 20 mock test leads",
+    "test_dataset_size": 20
+  },
+  "failure_handling": {
+    "on_api_timeout": "Retry 3 times with exponential backoff (initial delay 500ms)",
+    "on_persistent_failure": "Send alert webhook notification to Slack channel and flag row as failed in database"
+  },
+  "data_security": {
+    "encrypt_database_fields": [
+      "customer_email",
+      "api_keys"
+    ],
+    "env_only_secrets": true
+  },
+  "budget_constraints": {
+    "monthly_hosting_budget_usd": 15,
+    "api_token_budget_per_run_usd": 0.05
+  },
+  "out_of_scope": [
+    "No custom mobile app development.",
+    "No direct management of client Stripe/PayPal merchant accounts.",
+    "No ongoing manual data correction."
+  ]
+}

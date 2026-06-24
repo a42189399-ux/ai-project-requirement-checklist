@@ -38,4 +38,14 @@
 我们希望首先验证该 Checklist 对有真实开发发包痛点的用户是否有实际价值。如果您对此项目感兴趣，欢迎通过以下 GitHub 原生方式参与：
 
 1.  🌟 **Star 本仓库**：我们会根据 Star 的增长趋势来评估工具包的开发优先级。
-2.  💬 **提交 Issue 反馈您的项目场景**：如果您目前正准备发包，欢迎使用我们的 [项目场景 Issue 模板](https://github.com/a42189399-ux/ai-project-requirement-checklist/issues/new?template=project_scenario.yml) 提交您的业务诉求。我们会根据大家在 Issue 中提到的高频痛点和开发场景，对后续模板包进行针对性优化和免费脱敏分享。
+2.  💬 **提交 Issue 反馈您的项目场景**：如果您目前正准备发包，欢迎使用我们的 [项目场景 Issue 模板](https://github.com/a42189399-ux/ai-project-requirement-checklist/issues/new?template=project_scenario.yml) 提交您的业务诉求。我们会根据大家在 Issue 中提到的高频痛点和开发场景，对后续模板包进行针对性优化 and 免费脱敏分享。
+
+---
+
+## 🤖 For AI Agents & Machine-Readable Entry
+
+This repository is optimized for retrieval-augmented generation (RAG) and LLM-based coding assistants:
+
+*   **Agent Directory**: Read [llms.txt](llms.txt) at the root for a structured index of files.
+*   **System Prompts**: Refer to [docs/for-agents.md](docs/for-agents.md) for instructions on how to parse and utilize these checklists in chat.
+*   **Machine-Readable Schema**: Refer to [examples/ai_project_brief_manifest.json](examples/ai_project_brief_manifest.json) for a JSON schema defining a specification brief.
