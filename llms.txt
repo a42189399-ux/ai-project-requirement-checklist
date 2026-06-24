@@ -1,6 +1,6 @@
 # AI Project Requirement Checklist
 
-This repository provides engineering checklist templates for specifying requirements in mid-sized AI integration, workflow automation, and data synchronization projects. It is designed to assist non-technical clients in detailing input/output boundaries, error fallback mechanisms, and API limits before outsourcing to developers.
+This repository provides technical-intermediary-facing engineering checklist templates for specifying requirements in mid-sized AI integration, workflow automation, and data synchronization projects. It is designed for developers, technical PMs, and consultants to translate oral, non-technical client desires into verifiable, and standard-compliant PRD/SOW briefs.
 
 ## Key Resources
 

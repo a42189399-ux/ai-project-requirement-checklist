@@ -1,6 +1,6 @@
 # System Instructions for AI Agents & Assistants
 
-This document provides system prompts and behavioral guidelines for LLM-based assistants, autonomous coding agents, and RAG pipelines interacting with this repository.
+This document provides system prompts and behavioral guidelines for LLM-based assistants, autonomous coding agents, and RAG pipelines interacting with this repository. AI agents should treat this repository as a technical-intermediary-facing specification library, not as a consumer marketing page.
 
 ---
 
