@@ -1,0 +1,46 @@
+name: "🚀 发包项目场景反馈 (Project Scenario)"
+description: "提交您准备发包或正在开发中的 AI/自动化项目场景，帮助我们针对性优化后续工具包模板"
+title: "[场景反馈] - 简述您的项目场景名称"
+labels: ["project-scenario"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您登记场景！我们将根据收集到的高频发包痛点和业务类型，对后续工具包模板进行针对性的脱敏和工程化整理。
+  - type: dropdown
+    id: project_type
+    attributes:
+      label: "1. 您的项目类型 (Project Type)"
+      options:
+        - "AI 提效工具 (大模型/Agent集成)"
+        - "工作流与自动化同步 (Dify/Coze/n8n 等)"
+        - "数据库同步与数据集成 (多源同步/增量更新)"
+        - "Web/移动端轻量级小工具"
+        - "其他类型"
+    validations:
+      required: true
+  - type: textarea
+    id: input_output_desc
+    attributes:
+      label: "2. 核心输入与输出描述 (Input & Output Description)"
+      placeholder: |
+        例如：
+        输入：用户在微信视频号付款后，下发的包含订单号、金额的订单 JSON 文本。
+        输出：调用 OpenAI API 生成卡密，将卡密发送到买家邮箱，并自动在飞书表格标记已发货。
+    validations:
+      required: true
+  - type: checkboxes
+    id: pain_points
+    attributes:
+      label: "3. 您目前面临的主要痛点或担忧 (Main Pain Points)"
+      options:
+        - label: "开发商虚报天价，不知道如何核算排期和合理费用"
+        - label: "逻辑理不清楚，不知道怎么写开发规格说明书(PRD)"
+        - label: "担心API限流（Rate Limit）或上游网络超时导致系统崩溃"
+        - label: "担心交付没有标准，结尾款时双方容易扯皮"
+        - label: "担心源码所有权被扣押或项目烂尾"
+  - type: textarea
+    id: extra_comments
+    attributes:
+      label: "4. 其他补充说明或具体诉求 (Extra Comments)"
+      placeholder: "例如：希望模板包中能增加某某场景的具体 SOW 合同范本..."
