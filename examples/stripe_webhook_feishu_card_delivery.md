@@ -1,7 +1,7 @@
 # 需求规约模板：支付回调与多维表格自动虚拟发货/发卡系统规约 (Stripe Webhook -> Feishu Card Delivery)
 
 ## 1. 需求背景 (Background)
-发包方在海外运营个人独立站或 SaaS 服务，使用 Stripe 等支付网关进行收款。希望在用户成功付款（即 Stripe Webhook 触发 `checkout.session.completed` 事件）时，系统能够自动读取飞书多维表格（Lark Base）中预存的卡密库（或激活码列表），提取一个未使用的卡密通过邮件或 IM 发送给买家，并将该卡密的状态标记为“已使用（Used）”及绑定买家邮箱，实现全自动的虚拟发货流程。
+发包方在海外运营个人独立站或 SaaS 服务，使用 Stripe 等支付网关进行收款。希望在用户成功付款（即 Stripe Webhook 触发 `checkout.session.completed` 事件）时，系统能够自动读取飞书多维表格（Lark Base）中预存的卡密库（或激活码列表），提取一个未使用的卡密通过邮件或 IM 发送给买家，并将该卡密的状态标记为“已使用（Used）”及绑定买家邮箱，实现全自动 of 虚拟发货流程。
 
 ---
 

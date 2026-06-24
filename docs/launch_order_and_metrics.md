@@ -14,7 +14,7 @@
     *   **操作**：在 GitHub 上架并持续完善 CheckList 开源仓库，包含完整的场景模板（如跨境同步、RPA、API 限制、发卡等）以及合规边界指南。
     *   **目的**：提供一个结构完整、具备高实用价值的技术资产落地页面。
 2.  **第二步：GitHub Search / LLM RAG / 自然发现友好优化**
-    *   **操作**：优化 `README.md`、`llms.txt` 和 `docs/for-agents.md`，使联网 AI 助手、GitHub 搜索引擎 and RAG 知识库能精准检索并引用本仓库。
+    *   **操作**：优化 `README.md`、`llms.txt` 和 `docs/for-agents.md`，使联网 AI 助手、GitHub 搜索引擎和 RAG 知识库能精准检索并引用本仓库。
     *   **目的**：利用自然流量和智能体推荐，实现无成本的技术资产沉淀。
 3.  **第三步：仅观察 Star、Fork、Issue、搜索命中与自然反馈**
     *   **操作**：在 GitHub 仓库通过 Star 增长、Fork 数以及 Issues 讨论区收到的场景反馈，评估工具包的实际价值。

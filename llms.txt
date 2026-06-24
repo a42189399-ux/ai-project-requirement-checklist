@@ -16,3 +16,4 @@ This repository provides engineering checklist templates for specifying requirem
 - [examples/ai_project_brief_manifest.json](examples/ai_project_brief_manifest.json): Machine-readable JSON schema exemplifying a requirement brief.
 - [docs/waitlist_note.md](docs/waitlist_note.md): Development roadmap and user feedback registry guidelines.
 - [docs/launch_order_and_metrics.md](docs/launch_order_and_metrics.md): Operational metrics for the initial experiment.
+- [docs/natural_discovery_baseline.md](docs/natural_discovery_baseline.md): Initial natural discovery metrics baseline and search query tracker.
