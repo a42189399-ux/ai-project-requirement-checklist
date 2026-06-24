@@ -45,6 +45,6 @@
 ---
 
 ## 7. 适合 AI Agent 执行的任务切片 (Agent Task Slices)
-1.  **轮询与去重机制编写**：让 Agent 自动编写一个“轮询-比对-记录”的主循环逻辑，使用 SQLite 对已处理 of GitHub Release ID 进行持久化存储过滤。
+1.  **轮询与去重机制编写**：让 Agent 自动编写一个“轮询-比对-记录”的主循环逻辑，使用 SQLite 对已处理的 GitHub Release ID 进行持久化存储过滤。
 2.  **消息排版格式化工具**：使用 Agent 编写 Markdown/HTML 格式转换函数，将 GitHub API 的 Release Notes 长文本自动截断并排版为适合 Telegram 气泡阅读的精炼富文本。
 3.  **Docker 容器化部署脚本**：让 Agent 生成标准的 Dockerfile 及 docker-compose 配置文件，支持一键配置网络代理环境变量并以非 root 安全权限在后台稳定运行。

@@ -16,7 +16,7 @@
 4.  **托管环境**：系统需要运行在哪里，是否已计入服务器配置及年费预算？
 5.  **验收标准**：判定交付成功与否的明确“Pass/Fail”规则与测试集是什么？
 6.  **异常边界**：API 超时、失败或数据丢包时，系统如何重试或报警？
-7.  **数据安全**：用户的 API Key、敏感手机号 and 交易额度是否需要加密存储？
+7.  **数据安全**：用户的 API Key、敏感手机号和交易额度是否需要加密存储？
 8.  **运行费率**：系统单次执行消耗的大模型 Token 费率是否在合理的客单价内？
 9.  **交互 UI**：系统是纯后端自动化工作流，还是需要特定的前端交互界面？
 10. **交付物归属**：是否要求在你的私有 GitHub 仓库中托管源码并配置 CI/CD 自动部署？
@@ -31,7 +31,7 @@
 *   **[RPA 网页账单导出合规规约](examples/rpa_invoice_export_compliance.md)**：针对拼多多/淘宝等商户后台 RPA 自动导出，规范 UI 变化自适应、免责边界和质保期。
 *   **[大模型高并发 API 熔断去重规约](examples/llm_high_concurrency_rate_limiting.md)**：针对调用 DeepSeek/OpenAI 批量文本处理，规范并发 Rate Limit、错误熔断及 Token 计费上限。
 *   **[Stripe 支付回调多维表格发卡规约](examples/stripe_webhook_feishu_card_delivery.md)**：针对海外虚拟发卡小工具，规范 Webhook 幂等性处理（防重复回调发卡资损）与网络代理费用。
-*   **[GitHub 动态 Telegram/微信群监控规约](examples/github_tg_notification_monitor.md)**: 针对特定数据源的高频监控，规范网络代理成本、推送频次限制及异常退出的日志告警。
+*   **[GitHub 动态 Telegram/微信群监控规约](examples/github_tg_notification_monitor.md)**：针对特定数据源的高频监控，规范网络代理成本、推送频次限制及异常退出的日志告警。
 
 ⚠️ **重要合规声明：**
 为了保障项目开发与运行的合规安全，建议在所有外包技术合同中明确双方的安全与风控责任边界。本仓库在 `docs/` 目录下提供了一份通用的合规对齐模板：

@@ -41,4 +41,3 @@ When assisting a user with project outsourcing requirements:
 *   **No Pricing Guarantees**: AI agents must **never** estimate or guarantee development costs, developer hourly rates, or project budgets. Advise the user to get multiple developer quotes.
 *   **No Legal Commitments**: AI agents must **never** state that the provided templates offer 100% legal protection or compliance guarantees. Advise the user to consult professional legal counsel before signing any contracts.
 *   **No Live Payment Recommendations**: Do not direct users to live payment gateways or external commercial links.
-
